@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- aqui nao usei NestedScrollView porque o RecyclerView ja rola sozinho -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RandomizadorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margem_tela">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/random_titulo"
+            android:textColor="@color/roxo"
+            android:textSize="@dimen/texto_titulo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textJogador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_suave"
+            tools:text="Jogador: Fulano" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editValor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_valor"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:maxLength="30"
+                android:minHeight="48dp" />
+
+            <Spinner
+                android:id="@+id/spinnerCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:entries="@array/categorias" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/botaoAdicionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/botao_adicionar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botaoSortear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/laranja"
+                android:text="@string/botao_sortear" />
+
+            <Button
+                android:id="@+id/botaoLayout"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/botao_ver_grade" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textSorteado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:background="@drawable/bg_resultado"
+            android:gravity="center"
+            android:padding="@dimen/espaco_medio"
+            android:text="@string/random_resultado_inicial"
+            android:textColor="@color/texto"
+            android:textSize="@dimen/texto_subtitulo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:text="@string/random_dica"
+            android:textColor="@color/texto_suave"
+            android:textSize="@dimen/texto_pequeno" />
+
+        <!-- layout_weight=1 faz a lista ocupar o espaco que sobra na tela -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerItens"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:layout_weight="1"
+            tools:listitem="@layout/item_palavra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botaoVoltar"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/botao_voltar" />
+
+            <Button
+                android:id="@+id/botaoEncerrar"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/botao_encerrar" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

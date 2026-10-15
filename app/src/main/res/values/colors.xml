@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- cores principais do app -->
+    <color name="roxo">#FF5E35B1</color>
+    <color name="roxo_claro">#FFEDE7F6</color>
+    <color name="laranja">#FFF57C00</color>
+    <color name="fundo">#FFF5F5F5</color>
+    <color name="texto">#FF212121</color>
+    <color name="texto_suave">#FF666666</color>
+    <color name="borda">#FFCCCCCC</color>
+
+    <!-- resultado das partidas -->
+    <color name="cor_vitoria">#FF2E7D32</color>
+    <color name="cor_derrota">#FFC62828</color>
+    <color name="cor_empate">#FF555555</color>
+
+    <!-- pistas do codigo secreto -->
+    <color name="pista_verde">#FF66BB6A</color>
+    <color name="pista_amarelo">#FFFFCA28</color>
+    <color name="pista_cinza">#FF9E9E9E</color>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margem_tela">16dp</dimen>
+    <dimen name="espaco_pequeno">8dp</dimen>
+    <dimen name="espaco_medio">12dp</dimen>
+    <dimen name="espaco_grande">24dp</dimen>
+
+    <dimen name="texto_titulo">26sp</dimen>
+    <dimen name="texto_subtitulo">18sp</dimen>
+    <dimen name="texto_normal">16sp</dimen>
+    <dimen name="texto_pequeno">14sp</dimen>
+    <dimen name="texto_placar">22sp</dimen>
+
+    <dimen name="tamanho_logo">96dp</dimen>
+    <dimen name="tamanho_icone_painel">48dp</dimen>
+    <dimen name="tamanho_botao_jogada">72dp</dimen>
+    <dimen name="tamanho_jogada_resultado">64dp</dimen>
+    <dimen name="tamanho_digito">40dp</dimen>
+    <dimen name="largura_coluna_medida">170dp</dimen>
+</resources>

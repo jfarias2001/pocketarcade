@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ArenaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margem_tela">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/arena_titulo"
+            android:textColor="@color/roxo"
+            android:textSize="@dimen/texto_titulo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textJogador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_suave"
+            tools:text="Jogador: Fulano" />
+
+        <TextView
+            android:id="@+id/textPlacar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:gravity="center"
+            android:textColor="@color/texto"
+            android:textSize="@dimen/texto_placar"
+            android:textStyle="bold"
+            tools:text="Você 0 x 0 Dispositivo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:text="@string/arena_escolha"
+            android:textColor="@color/texto"
+            android:textSize="@dimen/texto_subtitulo" />
+
+        <!-- os tres botoes de jogada -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/botaoPedra"
+                    android:layout_width="@dimen/tamanho_botao_jogada"
+                    android:layout_height="@dimen/tamanho_botao_jogada"
+                    android:background="@drawable/bg_painel"
+                    android:contentDescription="@string/desc_pedra"
+                    android:padding="@dimen/espaco_medio"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_pedra" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pedra"
+                    android:textColor="@color/texto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/botaoPapel"
+                    android:layout_width="@dimen/tamanho_botao_jogada"
+                    android:layout_height="@dimen/tamanho_botao_jogada"
+                    android:background="@drawable/bg_painel"
+                    android:contentDescription="@string/desc_papel"
+                    android:padding="@dimen/espaco_medio"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_papel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/papel"
+                    android:textColor="@color/texto" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/botaoTesoura"
+                    android:layout_width="@dimen/tamanho_botao_jogada"
+                    android:layout_height="@dimen/tamanho_botao_jogada"
+                    android:background="@drawable/bg_painel"
+                    android:contentDescription="@string/desc_tesoura"
+                    android:padding="@dimen/espaco_medio"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_tesoura_jogada" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tesoura"
+                    android:textColor="@color/texto" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:text="@string/arena_empate_info"
+            android:textColor="@color/texto_suave"
+            android:textSize="@dimen/texto_pequeno" />
+
+        <!-- jogada de cada lado na rodada atual -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:background="@drawable/bg_resultado"
+            android:orientation="horizontal"
+            android:padding="@dimen/espaco_medio">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_voce"
+                    android:textColor="@color/texto" />
+
+                <ImageView
+                    android:id="@+id/imageJogador"
+                    android:layout_width="@dimen/tamanho_jogada_resultado"
+                    android:layout_height="@dimen/tamanho_jogada_resultado"
+                    android:contentDescription="@string/desc_jogada_jogador"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_dispositivo"
+                    android:textColor="@color/texto" />
+
+                <ImageView
+                    android:id="@+id/imageDispositivo"
+                    android:layout_width="@dimen/tamanho_jogada_resultado"
+                    android:layout_height="@dimen/tamanho_jogada_resultado"
+                    android:contentDescription="@string/desc_jogada_dispositivo"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textResultadoRodada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:gravity="center"
+            android:text="@string/arena_aguardando"
+            android:textColor="@color/texto"
+            android:textSize="@dimen/texto_subtitulo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textResultadoPartida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:gravity="center"
+            android:textSize="@dimen/texto_placar"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="Você venceu a partida!"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/botaoNovaPartida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:backgroundTint="@color/laranja"
+            android:text="@string/botao_nova_partida" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_grande"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botaoVoltar"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/botao_voltar" />
+
+            <Button
+                android:id="@+id/botaoEncerrar"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/botao_encerrar" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

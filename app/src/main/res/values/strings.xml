@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Pocket Arcade</string>
+
+    <!-- dados do aluno (trocar pelos seus) -->
+    <string name="aluno_nome">João Paulo Alves Farias</string>
+    <string name="aluno_matricula">Matrícula: 20242012000520</string>
+    <string name="aluno_curso">Curso: Análise e Desenvolvimento de Sistemas</string>
+
+    <!-- botoes usados em varias telas -->
+    <string name="botao_voltar">Voltar</string>
+    <string name="botao_encerrar">Encerrar sessão</string>
+    <string name="botao_abrir">Abrir</string>
+    <string name="botao_nova_partida">Nova partida</string>
+
+    <!-- tela 1 -->
+    <string name="desc_logo">Logotipo do Pocket Arcade, um controle de videogame</string>
+    <string name="subtitulo_app">Central de desafios de bolso</string>
+    <string name="label_apelido">Seu apelido</string>
+    <string name="hint_apelido">Digite seu apelido</string>
+    <string name="botao_entrar">Entrar no Pocket Arcade</string>
+    <string name="aviso_individual">Trabalho individual.</string>
+    <string name="erro_apelido_vazio">Digite um apelido</string>
+    <string name="erro_apelido_curto">O apelido precisa ter pelo menos 3 letras</string>
+    <string name="ultimo_modulo">Sessão encerrada. Último módulo usado: %1$s</string>
+
+    <!-- tela 2 -->
+    <string name="saudacao">Olá, %1$s!</string>
+    <string name="central_titulo">Central de Desafios</string>
+    <string name="central_texto">Escolha um dos desafios abaixo. Você pode voltar para cá a qualquer momento pelo botão Voltar.</string>
+    <string name="erro_sem_apelido">Apelido inválido. Volte e digite de novo.</string>
+
+    <string name="painel_scanner_titulo">Scanner de Mensagens</string>
+    <string name="painel_scanner_texto">Digite uma frase e veja quantas letras, palavras e vogais ela tem, como ela fica ao contrário e se é um palíndromo.</string>
+    <string name="painel_arena_titulo">Arena</string>
+    <string name="painel_arena_texto">Pedra, papel e tesoura contra o celular. Melhor de três: quem fizer duas vitórias primeiro ganha.</string>
+    <string name="painel_cofre_titulo">Código Secreto</string>
+    <string name="painel_cofre_texto">Descubra os quatro dígitos do cofre em até oito tentativas. As cores mostram se você está perto.</string>
+    <string name="painel_random_titulo">Randomizador</string>
+    <string name="painel_random_texto">Cadastre filmes, comidas, lugares e desafios e deixe o app sortear um item da categoria escolhida.</string>
+
+    <string name="desc_icone_scanner">Ícone de lupa do scanner</string>
+    <string name="desc_icone_arena">Ícone de tesoura da arena</string>
+    <string name="desc_icone_cofre">Ícone de cadeado do cofre</string>
+    <string name="desc_icone_random">Ícone de setas cruzadas do randomizador</string>
+
+    <string name="central_creditos_titulo">Créditos</string>
+    <string name="central_creditos_texto">Ícones: Material Icons do Google (licença Apache 2.0), adicionados pelo Vector Asset do Android Studio. A figura da pedra foi desenhada no próprio projeto.\n\nSons: tons simples gerados pelo autor.</string>
+
+    <!-- tela 3 -->
+    <string name="scanner_titulo">Scanner de Mensagens</string>
+    <string name="hint_mensagem">Digite uma mensagem</string>
+    <string name="botao_analisar">Analisar</string>
+    <string name="botao_limpar">Limpar</string>
+    <string name="erro_mensagem_vazia">Digite uma mensagem para analisar</string>
+    <string name="erro_mensagem_curta">A mensagem precisa ter pelo menos 3 caracteres</string>
+    <string name="coluna_medida">Medida</string>
+    <string name="coluna_resultado">Resultado</string>
+    <string name="medida_caracteres">Caracteres sem espaços</string>
+    <string name="medida_palavras">Palavras</string>
+    <string name="medida_vogais">Vogais</string>
+    <string name="medida_invertido">Texto invertido</string>
+    <string name="medida_palindromo">Palíndromo</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+
+    <!-- tela 4 -->
+    <string name="arena_titulo">Arena</string>
+    <string name="label_jogador">Jogador: %1$s</string>
+    <string name="placar">Você %1$d x %2$d Dispositivo</string>
+    <string name="arena_escolha">Escolha sua jogada</string>
+    <string name="arena_empate_info">Empates não somam pontos.</string>
+    <string name="pedra">Pedra</string>
+    <string name="papel">Papel</string>
+    <string name="tesoura">Tesoura</string>
+    <string name="desc_pedra">Jogar pedra</string>
+    <string name="desc_papel">Jogar papel</string>
+    <string name="desc_tesoura">Jogar tesoura</string>
+    <string name="label_voce">Você</string>
+    <string name="label_dispositivo">Dispositivo</string>
+    <string name="desc_jogada_jogador">Jogada escolhida por você</string>
+    <string name="desc_jogada_dispositivo">Jogada sorteada pelo dispositivo</string>
+    <string name="arena_aguardando">Faça sua primeira jogada</string>
+    <string name="rodada_vitoria">Vitória! %1$s ganha de %2$s</string>
+    <string name="rodada_derrota">Derrota! %1$s perde para %2$s</string>
+    <string name="rodada_empate">Empate! Os dois jogaram %1$s</string>
+    <string name="partida_vitoria">Você venceu a partida!</string>
+    <string name="partida_derrota">O dispositivo venceu a partida.</string>
+
+    <!-- tela 5 -->
+    <string name="cofre_titulo">Cofre do Código Secreto</string>
+    <string name="cofre_oculto">• • • •</string>
+    <string name="hint_palpite">Digite quatro números diferentes</string>
+    <string name="botao_tentar">Tentar</string>
+    <string name="tentativas">Tentativas: %1$d de %2$d</string>
+    <string name="legenda_verde">Verde: dígito certo na posição certa</string>
+    <string name="legenda_amarelo">Amarelo: o dígito existe, mas em outra posição</string>
+    <string name="legenda_cinza">Cinza: o dígito não existe no código</string>
+    <string name="historico_titulo">Histórico de tentativas</string>
+    <string name="numero_tentativa">%1$d.</string>
+    <string name="erro_palpite_vazio">Digite um palpite</string>
+    <string name="erro_palpite_tamanho">O palpite precisa ter exatamente 4 números</string>
+    <string name="erro_palpite_repetido">Não repita dígitos no palpite</string>
+    <string name="cofre_vitoria">Cofre aberto! Você acertou em %1$d tentativa(s) e levou %2$d segundo(s).</string>
+    <string name="cofre_derrota">O cofre continua fechado. O código era %1$s. Você usou %2$d tentativas em %3$d segundo(s).</string>
+
+    <!-- tela 6 -->
+    <string name="random_titulo">Randomizador de Palavras</string>
+    <string name="hint_valor">Digite uma palavra</string>
+    <string name="botao_adicionar">Adicionar</string>
+    <string name="botao_sortear">Sortear</string>
+    <string name="botao_ver_grade">Ver em grade</string>
+    <string name="botao_ver_lista">Ver em lista</string>
+    <string name="random_dica">Toque e segure um item para excluir.</string>
+    <string name="random_resultado_inicial">Escolha a categoria e toque em Sortear</string>
+    <string name="random_sorteado">Sorteado: %1$s</string>
+    <string name="erro_valor_vazio">Digite uma palavra para adicionar</string>
+    <string name="aviso_categoria_vazia">Não há itens na categoria %1$s</string>
+    <string name="aviso_item_removido">%1$s removido</string>
+
+    <string-array name="categorias">
+        <item>Filmes</item>
+        <item>Comidas</item>
+        <item>Lugares</item>
+        <item>Desafios</item>
+    </string-array>
+
+    <!-- itens que ja aparecem na lista quando a tela abre -->
+    <string-array name="exemplos_filmes">
+        <item>O Rei Leão</item>
+        <item>Vingadores</item>
+    </string-array>
+    <string-array name="exemplos_comidas">
+        <item>Pizza</item>
+        <item>Pão de queijo</item>
+    </string-array>
+    <string-array name="exemplos_lugares">
+        <item>Praia</item>
+        <item>Pirenópolis</item>
+    </string-array>
+    <string-array name="exemplos_desafios">
+        <item>Imitar um animal</item>
+        <item>10 polichinelos</item>
+    </string-array>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- uma linha do historico do cofre: numero da tentativa + os 4 digitos coloridos -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/espaco_pequeno"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textNumero"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/texto"
+        tools:text="1." />
+
+    <TextView
+        android:id="@+id/digito1"
+        android:layout_width="@dimen/tamanho_digito"
+        android:layout_height="@dimen/tamanho_digito"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto_subtitulo"
+        android:textStyle="bold"
+        tools:text="4" />
+
+    <TextView
+        android:id="@+id/digito2"
+        android:layout_width="@dimen/tamanho_digito"
+        android:layout_height="@dimen/tamanho_digito"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto_subtitulo"
+        android:textStyle="bold"
+        tools:text="2" />
+
+    <TextView
+        android:id="@+id/digito3"
+        android:layout_width="@dimen/tamanho_digito"
+        android:layout_height="@dimen/tamanho_digito"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto_subtitulo"
+        android:textStyle="bold"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/digito4"
+        android:layout_width="@dimen/tamanho_digito"
+        android:layout_height="@dimen/tamanho_digito"
+        android:layout_marginStart="4dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/texto_subtitulo"
+        android:textStyle="bold"
+        tools:text="9" />
+</LinearLayout>

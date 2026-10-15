@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".CofreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margem_tela">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cofre_titulo"
+            android:textColor="@color/roxo"
+            android:textSize="@dimen/texto_titulo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textJogador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_suave"
+            tools:text="Jogador: Fulano" />
+
+
+        <!-- mostra as bolinhas e, no fim da partida, o codigo de verdade -->
+        <TextView
+            android:id="@+id/textCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:gravity="center"
+            android:text="@string/cofre_oculto"
+            android:textColor="@color/texto"
+            android:textSize="@dimen/texto_titulo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTentativas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/texto_suave"
+            tools:text="Tentativas: 0 de 8" />
+
+        <EditText
+            android:id="@+id/editPalpite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:hint="@string/hint_palpite"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/botaoTentar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/botao_tentar" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:text="@string/legenda_verde"
+            android:textColor="@color/cor_vitoria"
+            android:textSize="@dimen/texto_pequeno" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/legenda_amarelo"
+            android:textColor="@color/laranja"
+            android:textSize="@dimen/texto_pequeno" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/legenda_cinza"
+            android:textColor="@color/texto_suave"
+            android:textSize="@dimen/texto_pequeno" />
+
+        <!-- aparece quando a partida termina -->
+        <TextView
+            android:id="@+id/textResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:background="@drawable/bg_resultado"
+            android:gravity="center"
+            android:padding="@dimen/espaco_medio"
+            android:textSize="@dimen/texto_normal"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="Cofre aberto!"
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/botaoNovaPartida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:backgroundTint="@color/laranja"
+            android:text="@string/botao_nova_partida"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:text="@string/historico_titulo"
+            android:textColor="@color/texto"
+            android:textStyle="bold" />
+
+        <!-- cada tentativa vira uma linha (item_tentativa.xml) adicionada aqui pelo codigo -->
+        <LinearLayout
+            android:id="@+id/listaHistorico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_grande"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botaoVoltar"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/botao_voltar" />
+
+            <Button
+                android:id="@+id/botaoEncerrar"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/botao_encerrar" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
